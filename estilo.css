@@ -1,0 +1,179 @@
+/*--universal tag (*)--*/
+* {
+    box-sizing: border-box;
+}
+
+a {
+    /*elimino subrayado a
+    cualquier hipervinculo*/
+    text-decoration: none;
+}
+
+ul {
+    /*quito puntos en listas*/
+    list-style-type: none;
+}
+
+/*quito relleno y margenes a esta tags*/
+figure,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----fin resets------*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.contenedor {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 1% 15px;
+    /*arriba=abajo, izquierda=derecha*/
+}
+
+/*header principal que se llama cabezal con regla de clase id*/
+.cabezal {
+    background-color: #250322;
+    color: snow;
+}
+
+.cabezal a {
+    color: silver;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*espacio entre ellos*/
+}
+
+.flex h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: 0.125rem;
+}
+
+.cabezal #menu {
+    width: 40.625rem;
+    padding-top: 1.25rem;
+
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    /*fila horizintal ------->>>>>>>>>>>>>>>>*/
+    justify-content: space-between;
+}
+
+/* class + tag es mas fuerte que grupo de tag tag tag
+.cabezal a{
+    color: silver;
+}
+id + tag + tag {
+    regla mas fuerte
+}
+*/
+
+#menu ul a {
+    /*alinear eje horizontal - x*/
+    width: 7.5rem;
+    /*alinear eje horizontal - x*/
+    text-align: center;
+    /*alinear eje vertical - y*/
+    height: 1.875rem;
+    line-height: 1.875rem;
+    /*alinear eje vertical - y*/
+    display: block;
+    background-color: rgb(212, 212, 212);
+    transition: .3s all;
+    border-radius: 0.125rem;
+    color: rgb(42, 2, 11);
+}
+
+/*pseudo elemento por ensima*/
+#menu ul a:hover {
+    background-color: rgb(95, 24, 39);
+    transition: .6s all;
+    color: rgb(212, 212, 212);
+}
+
+/*section nro 1*/
+#sobremi article {
+    display: flex;
+    flex-direction: row;
+}
+
+#sobremi h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: mediumvioletred;
+}
+#proyectos {
+    padding-top: 7rem;
+}
+#proyectos h2 {    
+    font-size: 5rem;
+    color: rgb(63, 5, 42);
+}
+
+#sobremi h3 {
+    font-size: 1.70rem;
+    font-weight: 400;
+    color: rgb(78, 3, 83);
+}
+
+.intro figure img {
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid rgb(19, 162, 245);
+}
+
+.intro figure figcaption {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.12rem;
+}
+
+.info {
+    width: 21.875rem;
+    padding-top: 5rem;
+    margin: 0 auto;
+}
+
+/*section nro 2*/
+#proyectos article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#proyectos figure a{
+    border-radius: 3%;    
+    border:5px solid rgb(0, 214, 143);
+    display: block;
+    height: 190px;
+    transition: .5s ease-in;    
+}
+
+#proyectos figure a:hover{    
+    border:5px solid rgb(2, 130, 153);
+    transition: .3s ease-in-out;    
+}
+footer{
+    background-color: rgb(49, 41, 56);
+    color: whitesmoke;
+    text-align: center;
+    padding: .5rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
