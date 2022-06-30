@@ -168,8 +168,8 @@ id + tag + tag {
     transition: .3s ease-in-out;    
 }
 footer{
-    background-color: rgb(49, 41, 56);
-    color: whitesmoke;
+    background-color:#546E7A;
+    color:#F5F5F5;
     text-align: center;
     padding: .5rem 0;
     width: 100%;
